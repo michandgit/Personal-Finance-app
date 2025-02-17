@@ -1,0 +1,124 @@
+#root{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf1f8;
+  
+}
+.transactions-container {
+    max-width: 700px;
+    padding: 20px;
+    background: #a7cef5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+  
+
+  .transactions-title {
+    text-align: center;
+    color: #210287;
+    font-size: 28px;
+    font-weight: bold;
+
+  }
+  
+ 
+  .transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-control {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .btn {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: #024ea0;
+  }
+  
+
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .transactions-table th, 
+  .transactions-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .transactions-table th {
+    background: #323232;
+    color: white;
+  }
+  
+  .transactions-table tr {
+    background: #f2f2f2;
+  }
+
+  
+  
+  /* Income and Expense Row Styling */
+  .income-row {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .expense-row {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Action Buttons */
+  .edit-btn {
+    padding: 6px 12px;
+    background: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    padding: 6px 12px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn:hover {
+    background: #d39e00;
+  }
+  
+  .delete-btn:hover {
+    background: #b21f2d;
+  }
+  
