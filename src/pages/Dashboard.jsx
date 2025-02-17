@@ -19,7 +19,7 @@ export default function Dashboard() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:5000/transactions").then((res) => {
+    axios.get("https://personal-finance-app-api.vercel.app/transactions").then((res) => {
     
       console.log(res);
       const grouped = res.data.reduce((acc, transaction) => {
