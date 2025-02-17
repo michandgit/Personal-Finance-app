@@ -20,7 +20,7 @@ export default function Transactions() {
   
 
   const fetchTransactions = async () => {
-    const res = await axios.get("http://localhost:5000/transactions");
+    const res = await axios.get("https://personal-finance-app-api.vercel.app/transactions");
     setTransactions(res.data);
   };
 
@@ -35,10 +35,10 @@ export default function Transactions() {
 
     if (editingId) {
    
-      await axios.put(`http://localhost:5000/transactions/${editingId}`, formData);
+      await axios.put(`https://personal-finance-app-api.vercel.app/transactions/${editingId}`, formData);
     } else {
     
-      await axios.post("http://localhost:5000/transactions", formData);
+      await axios.post("https://personal-finance-app-api.vercel.app/transactions", formData);
     }
 
     setFormData({ type: "income", amount: "", date: "", description: "" });
@@ -59,7 +59,7 @@ export default function Transactions() {
 
   // Handle Delete transaction
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:5000/transactions/${id}`);
+    await axios.delete(`https://personal-finance-app-api.vercel.app/transactions/${id}`);
     fetchTransactions(); 
   };
 
